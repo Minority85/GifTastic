@@ -25,7 +25,7 @@ function gifQuery() {
 
     var searchAnimal = $(this).attr("data-name");
 
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + searchAnimal + "&api_key=" + apiKey + "&limit=10"
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchAnimal + "&api_key=" + apiKey + "&limit=10"
 
     $.ajax({
         url: queryURL,
