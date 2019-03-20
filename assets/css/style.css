@@ -1,0 +1,40 @@
+html {
+    background: url(../images/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* overflow: hidden; */
+    background-repeat: no-repeat;
+}
+
+img {
+    margin: 5px;
+}
+
+body {
+    background: none;
+}
+
+/* form {
+    background: rgba(193,193,193,0.6);
+    padding: 5px;
+} */
+
+.container {
+    background: rgba(193,193,193,0.6);
+}
+
+.row {
+    font-weight: bolder;
+}
+
+.box{
+    float: left;
+}
+
+.animalButton {
+    margin: 5px;
+}
+
+#buttonRow {
+    margin-left: 5px;
+    margin-right: 5px;
+}
