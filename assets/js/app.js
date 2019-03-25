@@ -3,6 +3,7 @@ var gotNames = ["jon snow", "house stark", "king joffery", "winter is coming", "
 var dataHolder = true;
 var apiKey = "aAzuofkf1CDirDH1Beh8nyTLxRfds6MC";
 var valueNumber = 20;
+var animalCheck = true;
 
 function pageLoad() {
 
@@ -151,10 +152,15 @@ function newAnimal() {
     if (ab === "") {
 
     }
-    else {
+    else if (animalCheck === true) {
         names.push(ab);
 
         renderButtons();
+    }
+    else {
+        gotNames.push(ab);
+
+        gotQuery();
     }
 };
 
@@ -162,7 +168,7 @@ function gotQuery() {
 
     event.preventDefault();
 
-    console.log("TEST")
+    animalCheck = false;
 
     document.documentElement.style.background = "url('assets/images/gotbg.jpg') no-repeat center center fixed";
     document.documentElement.style.backgroundSize = "cover";
@@ -200,7 +206,7 @@ function animalQuery() {
 
     event.preventDefault();
 
-    console.log("TEST")
+    animalCheck = true;
 
     document.documentElement.style.background = "url('assets/images/bg.jpg') no-repeat center center fixed";
     document.documentElement.style.backgroundSize = "cover";
@@ -212,13 +218,7 @@ function animalQuery() {
 
     dataHolder = true;
 
-    for (var i = 0; i < names.length; i++) {
-
-        var a = $("<button>").addClass("animalButton").addClass("btn").addClass("btn-info").attr("data-name",
-            names[i]).text(names[i]);
-
-        $("#buttonArea").append(a);
-    }
+    renderButtons();
 }
 
 $(document).on("click", "#animal-button", animalQuery);
