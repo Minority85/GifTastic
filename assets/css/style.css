@@ -1,42 +1,41 @@
 html {
     background: url(../images/bg.jpg) no-repeat center center fixed;;
     background-size: cover;
-    /* overflow: hidden; */
     background-repeat: no-repeat;
-    box-shadow: inset 0 0 2000px rgba(193,193,193,0.9);
+    box-shadow: inset 2000px 0 0 rgba(193,193,193,0.6);
     min-height: 100%;
-}
-
-img {
-    margin: 5px;
 }
 
 body {
     background: none;
 }
 
-/* form {
-    background: rgba(193,193,193,0.6);
-    padding: 5px;
-} */
+nav {
+    width: 100%;
+    /* height: 75px; */
+}
 
-/* .container {
-    background: rgba(193,193,193,0.6);
-} */
+input {
+    margin-right: 10px;
+}
+
+.card {
+    width: 290px;
+    height: 275px;
+    float: left;
+    margin: 5px;
+    border: none;
+    background-color: rgb(255,255,255,0.5);
+}
 
 .row {
     font-weight: bolder;
-}
-
-.box{
-    float: left;
 }
 
 .animalButton {
     margin: 5px;
 }
 
-#buttonRow {
-    margin-left: 5px;
-    margin-right: 5px;
-}
+/* .navbar {
+    justify-content: flex-start;
+} */
